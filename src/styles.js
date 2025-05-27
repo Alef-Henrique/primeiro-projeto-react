@@ -13,9 +13,11 @@ export const Container = styled.div`
 `
 export const ToDoList = styled.div`
     background-color: white;
+    display: flex;
+    flex-direction: column;
     padding: 30px 20px;
     border-radius: 5px;
-    width: 500px;
+    width: 450px;
     margin: 20px;
     ul{
         padding: 0;
@@ -26,10 +28,8 @@ export const ToDoList = styled.div`
 export const Imput = styled.input`
     border: 2px solid rgba(209, 211, 212, 0.4);
     border-radius: 5px;
-    margin-right: 10px;
     height: 30px;
-    width: 300px;
-    margin-right: 20px;
+    min-width: 250px;
 `
 export const Button = styled.button`
     background: #8052ec;
@@ -39,6 +39,7 @@ export const Button = styled.button`
     height: 30px;
     border: none;
     color: #ffffff;
+    margin-top: 12px;
     cursor: pointer;
     &:hover{
         opacity: 0.8;
